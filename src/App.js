@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import './index.css';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -61,9 +61,7 @@ function App() {
         <div style={{ flex: 1 }} data-aos="fade-right">
           <h2 style={{ fontSize: '1.5rem', color: '#d1d5db' }}>Hello, It's Me</h2>
           <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: '0.5rem 0', color: '#ffffff' }}>Laraib Afzaal</h1>
-          <h3 style={{ fontSize: '1.25rem', color: '#00f2ff' }}>
-            <Typical steps={['I am a Machine Learning Engineer', 1500, 'I am an AI Enthusiast', 1500]} loop={Infinity} wrapper="span" />
-          </h3>
+          <h3 style={{ fontSize: '1.25rem', color: '#00f2ff' }}>I am an AI Enthusiast </h3>
           <p style={{ margin: '1rem 0', color: '#d1d5db', maxWidth: '480px' }}>
             I specialize in building intelligent systems using deep learning, NLP, and computer vision. With a passion for innovation and problem-solving, I bring research to life through code.
           </p>
