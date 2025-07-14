@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import './index.css';
 import { Typewriter } from 'react-simple-typewriter';
@@ -7,7 +6,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
-  const sections = ['about', 'projects', 'tools-and-skills', 'contact'];
+  const sections = ['about', 'experience', 'projects', 'tools-and-skills', 'contact'];
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -57,11 +56,21 @@ function App() {
         </div>
       </nav>
 
-      <section id="about" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '960px', margin: '3rem auto', padding: '2rem' }}>
-        <div style={{ flex: 1 }} data-aos="fade-right">
+      <section id="about" style={{ maxWidth: '960px', margin: '3rem auto', padding: '2rem', display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center' }}>
+        <div style={{ flex: '1 1 400px' }} data-aos="fade-right">
           <h2 style={{ fontSize: '1.5rem', color: '#d1d5db' }}>Hello, It's Me</h2>
           <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: '0.5rem 0', color: '#ffffff' }}>Laraib Afzaal</h1>
-          <h3 style={{ fontSize: '1.25rem', color: '#00f2ff' }}>I am an AI Enthusiast </h3>
+          <h3 style={{ fontSize: '1.25rem', color: '#00f2ff' }}>
+            <Typewriter
+              words={['I build intelligent systems using AI & ML']}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h3>
           <p style={{ margin: '1rem 0', color: '#d1d5db', maxWidth: '480px' }}>
             I specialize in building intelligent systems using deep learning, NLP, and computer vision. With a passion for innovation and problem-solving, I bring research to life through code.
           </p>
@@ -70,10 +79,20 @@ function App() {
           </div>
         </div>
 
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }} data-aos="fade-left">
+        <div style={{ flex: '1 1 260px', display: 'flex', justifyContent: 'center' }} data-aos="fade-left">
           <div style={{ width: '260px', height: '260px', backgroundColor: '#00f2ff', borderRadius: '50%', boxShadow: '0 0 50px #00f2ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <img src="/profile.JPG" alt="Laraib Afzaal" style={{ width: '220px', height: '220px', borderRadius: '50%', objectFit: 'cover', border: '6px solid #111827' }} />
           </div>
+        </div>
+      </section>
+
+      <section id="experience" style={{ maxWidth: '960px', margin: '2rem auto', padding: '2rem' }}>
+        <h2 style={{ fontSize: '1.8rem', borderBottom: '2px solid #00f2ff', paddingBottom: '0.5rem', marginBottom: '2rem' }}>Experience</h2>
+        <div style={{ color: '#d1d5db', lineHeight: '1.8' }}>
+          <p><strong>Lecturer</strong> – Artificial Intelligence Department, FAST NUCES (08/2021 - Present)</p>
+          <p><strong>Python Developer</strong> – DVIZ (03/2021 - 02/2022)<br />Worked on automation for marketing flows using Python, Django, AWS, and scraping.</p>
+          <p><strong>Data Scientist</strong> – Techlets Pvt. Ltd. (04/2020 - 02/2021)<br />Web scraping with BeautifulSoup/Selenium, AWS Rekognition, SEO, Google Analytics, NER.</p>
+          <p><strong>Intern - Security Analyst</strong> – JazzCash HQ Islamabad (07/2019 - 09/2019)</p>
         </div>
       </section>
 
