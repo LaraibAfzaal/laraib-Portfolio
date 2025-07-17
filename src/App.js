@@ -87,12 +87,15 @@ function App() {
       </section>
 
       <section id="experience" style={{ maxWidth: '960px', margin: '2rem auto', padding: '2rem' }}>
-        <h2 style={{ fontSize: '1.8rem', borderBottom: '2px solid #00f2ff', paddingBottom: '0.5rem', marginBottom: '2rem' }}>Experience</h2>
+        <h2 style={{ fontSize: '1.8rem', borderBottom: '2px solid #00f2ff', paddingBottom: '0.5rem', marginBottom: '2rem' }}>Work Experience</h2>
         <div style={{ color: '#d1d5db', lineHeight: '1.8' }}>
-          <p><strong>Lecturer</strong> – Artificial Intelligence Department, FAST NUCES (08/2021 - Present)</p>
-          <p><strong>Python Developer</strong> – DVIZ (03/2021 - 02/2022)<br />Worked on automation for marketing flows using Python, Django, AWS, and scraping.</p>
-          <p><strong>Data Scientist</strong> – Techlets Pvt. Ltd. (04/2020 - 02/2021)<br />Web scraping with BeautifulSoup/Selenium, AWS Rekognition, SEO, Google Analytics, NER.</p>
-          <p><strong>Intern - Security Analyst</strong> – JazzCash HQ Islamabad (07/2019 - 09/2019)</p>
+          <p><strong style={{ color: '#00f2ff' }}>Lecturer – Artificial Intelligence Department</strong><br />National University of Computer and Emerging Sciences<br />08/2021 - Present<br />Instructed core computer science subjects such as Algorithms, Programming, Software Engineering, and NLP, with a focus on practical applications and student engagement.</p>
+
+          <p><strong style={{ color: '#00f2ff' }}>Python Developer</strong><br />DVIZ<br />03/2021 - 02/2022<br />Worked on data automation including the creation of marketing flows and customer modules. Utilized Python, Django, AWS, and web scraping with platforms like Instagram and LinkedIn.</p>
+
+          <p><strong style={{ color: '#00f2ff' }}>Data Scientist</strong><br />Techlets Pvt. Ltd.<br />04/2020 - 02/2021<br />Performed web scraping using BeautifulSoup and Selenium with MongoDB. Integrated AWS Face and Text Rekognition, used Google Analytics, handled NER and JSON tasks, and conducted SEO for various websites.</p>
+
+          <p><strong style={{ color: '#00f2ff' }}>Intern – Security Analyst (Revenue Assurance)</strong><br />JazzCash, Headquarters Islamabad<br />07/2019 - 09/2019 <br />Assisted in revenue assurance tasks by analyzing transactional data and identifying discrepancies to support secure financial operations.</p>
         </div>
       </section>
 
